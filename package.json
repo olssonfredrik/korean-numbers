@@ -1,6 +1,6 @@
 {
 	"name": "korean-numbers",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Web-app for practicing the Korean numbers.",
 	"main": "build/rfapp.js",
 	"repository": {
