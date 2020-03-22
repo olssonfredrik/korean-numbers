@@ -17,7 +17,7 @@
 	},
 	"dependencies": {
 		"@microsoft/applicationinsights-web": "^2.4.4",
-		"@rocketfuel/core": "olssonfredrik/rocketfuel-lib-core#v0.0.5",
+		"@rocketfuel/core": "olssonfredrik/rocketfuel-lib-core#v0.0.6",
 		"@types/gl-matrix": "2.4.4",
 		"@types/howler": "^2.1.2",
 		"esotericsoftware-spine": "olssonfredrik/esotericsoftware-spine#3.8.0",
