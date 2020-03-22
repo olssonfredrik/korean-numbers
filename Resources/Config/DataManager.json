@@ -1,0 +1,80 @@
+{
+	"Values": {
+		"Volume:Voice": {
+			"Persistent": false,
+			"Format": "percent"
+		},
+		"Delay:Value": {
+			"Persistent": true,
+			"Format": "percent",
+			"InitialValue": 0.2
+		},
+		"Category:Index": {
+			"Persistent": true,
+			"Format": "integer",
+			"InitialValue": 1,
+			"MaxValue": 5
+		},
+		"Type:Index": {
+			"Persistent": true,
+			"Format": "integer",
+			"InitialValue": 0,
+			"MaxValue": 1
+		},
+		"Difficulty:Index": {
+			"Persistent": true,
+			"Format": "integer",
+			"InitialValue": 0,
+			"MaxValue": 2
+		},
+
+		"Game:NumberSino": {
+			"Persistent": false,
+			"Format": "integer"
+		},
+		"Game:NumberNative": {
+			"Persistent": false,
+			"Format": "integer"
+		},
+		"Game:TimeHours": {
+			"Persistent": false,
+			"Format": "doubledigits"
+		},
+		"Game:TimeMinutes": {
+			"Persistent": false,
+			"Format": "doubledigits"
+		},
+		"Game:DateYear": {
+			"Persistent": false,
+			"Format": "unformatted"
+		},
+		"Game:DateMonth": {
+			"Persistent": false,
+			"Format": "doubledigits"
+		},
+		"Game:DateDay": {
+			"Persistent": false,
+			"Format": "doubledigits"
+		},
+		"Game:Money": {
+			"Persistent": false,
+			"Format": "integer"
+		},
+		"Game:Sequence0": {
+			"Persistent": false,
+			"Format": "integer"
+		},
+		"Game:Sequence1": {
+			"Persistent": false,
+			"Format": "integer"
+		},
+		"Game:Sequence2": {
+			"Persistent": false,
+			"Format": "integer"
+		},
+		"Game:Sequence3": {
+			"Persistent": false,
+			"Format": "integer"
+		}
+	}
+}

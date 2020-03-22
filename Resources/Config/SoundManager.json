@@ -1,0 +1,8 @@
+{
+	"Groups": {
+		"Sfx": {
+			"EventId": "Sound:Play",
+			"VolumeData": "Volume:Voice"
+		}
+	}
+}

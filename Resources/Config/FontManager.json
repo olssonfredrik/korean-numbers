@@ -1,0 +1,144 @@
+{
+	"Styles": {
+		"Title": {
+			"Passes": [
+				{
+					"Uniforms": [
+						{
+							"Name": "uBorder",
+							"Value": [ 0.25, 0.0, -0.95 ]
+						},
+						{
+							"Name": "uSmoothing",
+							"Value": [ 2.0, 3.0, 3.0 ]
+						},
+						{
+							"Name": "uLayerColor[0]",
+							"Value": [ 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0 ]
+						}
+					]
+				}
+			]
+		},
+		"Light": {
+			"Passes": [
+				{
+					"Uniforms": [
+						{
+							"Name": "uBorder",
+							"Value": [ 0.0, -0.2, -0.95 ]
+						},
+						{
+							"Name": "uSmoothing",
+							"Value": [ 2.0, 3.0, 3.0 ]
+						},
+						{
+							"Name": "uLayerColor[0]",
+							"Value": [ 0.9, 0.9, 0.9, 1.0, 0.8, 0.8, 0.8, 1.0, 0.0, 0.0, 0.0, 0.0 ]
+						}
+					]
+				}
+			]
+		},
+		"Numbers": {
+			"Passes": [
+				{
+					"Uniforms": [
+						{
+							"Name": "uBorder",
+							"Value": [ 0.2, -0.1, -0.95 ]
+						},
+						{
+							"Name": "uSmoothing",
+							"Value": [ 2.0, 3.0, 3.0 ]
+						},
+						{
+							"Name": "uLayerColor[0]",
+							"Value": [ 0.1, 0.1, 0.1, 1.0, 0.6, 0.6, 0.6, 1.0, 0.0, 0.0, 0.0, 0.0 ]
+						}
+					]
+				}
+			]
+		}
+	},
+	"Configs": {
+		"Title": {
+			"Typeface": "MontserratBold",
+			"Style": "Title",
+			"Layout": {
+				"Scale": 70,
+				"Alignment": {
+					"X": 0.5,
+					"Y": 0.5
+				},
+				"CharacterSpacing": -0.2,
+				"LineSpacing": 0
+			}
+		},
+		"SectionTitle": {
+			"Typeface": "MontserratBold",
+			"Style": "Light",
+			"Layout": {
+				"Scale": 35,
+				"Alignment": {
+					"X": 0.5,
+					"Y": 0.5
+				},
+				"CharacterSpacing": 0.0,
+				"LineSpacing": 0
+			}
+		},
+		"LineText": {
+			"Typeface": "MontserratLight",
+			"Style": "Light",
+			"Layout": {
+				"Scale": 30,
+				"Alignment": {
+					"X": 0.0,
+					"Y": 0.5
+				},
+				"CharacterSpacing": -0.1,
+				"LineSpacing": 0
+			}
+		},
+		"LineTextBold": {
+			"Typeface": "MontserratBold",
+			"Style": "Light",
+			"Layout": {
+				"Scale": 30,
+				"Alignment": {
+					"X": 0.5,
+					"Y": 0.5
+				},
+				"CharacterSpacing": 0.0,
+				"LineSpacing": 0
+			}
+		},
+		"NumberGame": {
+			"Typeface": "MontserratBold",
+			"Style": "Numbers",
+			"Layout": {
+				"Scale": 100,
+				"Alignment": {
+					"X": 0.5,
+					"Y": 0.5
+				},
+				"CharacterSpacing": -0.15,
+				"LineSpacing": 0
+			}
+		},
+		"UIDot": {
+			"Typeface": "MontserratBold",
+			"Style": "Light",
+			"Layout": {
+				"Scale": 140,
+				"Alignment": {
+					"X": 0.5,
+					"Y": 0.88
+				},
+				"CharacterSpacing": 0,
+				"LineSpacing": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,104 @@
+{
+"skeleton": {
+	"hash": "NMz8ZoPO2pODaW1WwenjqAO/Vlo",
+	"spine": "3.8.85",
+	"x": -960,
+	"y": -1304.91,
+	"width": 1920,
+	"height": 2492.63,
+	"images": "../Graphics/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "Root" },
+	{ "name": "Background", "parent": "Root", "scaleX": 60, "scaleY": 60 },
+	{ "name": "Frame", "parent": "Root" },
+	{ "name": "Boxes", "parent": "Root", "scaleX": 1.2, "scaleY": 1.2 },
+	{ "name": "Box", "parent": "Boxes" },
+	{ "name": "Title", "parent": "Root", "y": 1152.73 },
+	{ "name": "Game", "parent": "Root" },
+	{ "name": "Buttons", "parent": "Root", "y": -1254.91 }
+],
+"slots": [
+	{ "name": "Background", "bone": "Background", "color": "1e1e1eff", "attachment": "Block" },
+	{ "name": "Frame", "bone": "Frame", "color": "202020ff" },
+	{ "name": "Box", "bone": "Box", "attachment": "Placeholders/Box" },
+	{ "name": "Title", "bone": "Title", "attachment": "Placeholders/Text" },
+	{ "name": "Game", "bone": "Game", "attachment": "Placeholders/Dummy" },
+	{ "name": "Button", "bone": "Buttons", "attachment": "Placeholders/Dummy" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Background": {
+				"Block": { "width": 32, "height": 32 }
+			},
+			"Box": {
+				"Placeholders/Box": { "width": 800, "height": 384 }
+			},
+			"Button": {
+				"Placeholders/Dummy": { "width": 100, "height": 100 }
+			},
+			"Game": {
+				"Placeholders/Dummy": { "width": 100, "height": 100 }
+			},
+			"Title": {
+				"Placeholders/Text": { "width": 240, "height": 70 }
+			}
+		}
+	}
+],
+"animations": {
+	"Play": {
+		"bones": {
+			"Boxes": {
+				"translate": [
+					{ "x": -3000 }
+				]
+			}
+		}
+	},
+	"Play_Settings": {
+		"bones": {
+			"Boxes": {
+				"translate": [
+					{ "x": -3000, "curve": 0, "c2": 0.34, "c3": 0.473 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Game": {
+				"translate": [
+					{ "curve": 0.54, "c4": 0.74 },
+					{ "time": 0.3333, "x": 3000 }
+				]
+			}
+		}
+	},
+	"Settings": {
+		"bones": {
+			"Game": {
+				"translate": [
+					{ "x": 3000 }
+				]
+			}
+		}
+	},
+	"Settings_Play": {
+		"bones": {
+			"Boxes": {
+				"translate": [
+					{ "curve": 0.5, "c4": 0.68 },
+					{ "time": 0.3333, "x": -3000 }
+				]
+			},
+			"Game": {
+				"translate": [
+					{ "x": 3000, "curve": 0, "c2": 0.34, "c3": 0.616 },
+					{ "time": 0.3333 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,32 @@
+{
+"skeleton": {
+	"hash": "6EqCxwwdjWWUsX16YnxQqEYSe2Y",
+	"spine": "3.8.85",
+	"x": -50,
+	"y": -200,
+	"width": 100,
+	"height": 100,
+	"images": "../Graphics/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "Root" },
+	{ "name": "Top", "parent": "Root", "y": -150 }
+],
+"slots": [
+	{ "name": "Top", "bone": "Top", "attachment": "Placeholders/Dummy" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Top": {
+				"Placeholders/Dummy": { "width": 100, "height": 100 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

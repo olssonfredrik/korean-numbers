@@ -1,0 +1,116 @@
+{
+"skeleton": {
+	"hash": "7vKG+Qavk4TraCF0mCHk4be/zG0",
+	"spine": "3.8.85",
+	"x": -441,
+	"y": -192,
+	"width": 846,
+	"height": 389.01,
+	"images": "../Graphics/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "Root" },
+	{ "name": "Background", "parent": "Root", "scaleX": 25, "scaleY": 12 },
+	{ "name": "Line1", "parent": "Root", "y": 48 },
+	{ "name": "Text1", "parent": "Line1", "x": -321 },
+	{ "name": "Value1", "parent": "Line1", "x": -75 },
+	{ "name": "Line2", "parent": "Root", "y": -42 },
+	{ "name": "Text2", "parent": "Line2", "x": -321 },
+	{ "name": "Value2", "parent": "Line2", "x": -75 },
+	{ "name": "Line3", "parent": "Root", "y": -132 },
+	{ "name": "Text3", "parent": "Line3", "x": -321 },
+	{ "name": "Slider", "parent": "Line3", "x": 104.14 },
+	{ "name": "LineSegment", "parent": "Slider", "scaleX": 1.12 },
+	{ "name": "Line0", "parent": "Root", "y": 132 },
+	{ "name": "Text0", "parent": "Line0", "x": -321 },
+	{ "name": "Value0", "parent": "Line0", "x": -75 },
+	{ "name": "Shadow", "parent": "Background", "x": 0.2, "y": 0.42 },
+	{ "name": "Box0", "parent": "Value0", "x": 180, "scaleX": 12, "scaleY": 1.8 },
+	{ "name": "Box1", "parent": "Value1", "x": 180, "scaleX": 12, "scaleY": 1.8 },
+	{ "name": "Box2", "parent": "Value2", "x": 180, "scaleX": 12, "scaleY": 1.8 },
+	{ "name": "Shadow0", "parent": "Box0", "x": -0.1, "y": -0.6 },
+	{ "name": "Shadow1", "parent": "Box1", "x": -0.1, "y": -0.67 },
+	{ "name": "Shadow2", "parent": "Box2", "x": -0.1, "y": -0.67 }
+],
+"slots": [
+	{ "name": "Shadow", "bone": "Shadow", "color": "00000055", "attachment": "Block" },
+	{ "name": "Background", "bone": "Background", "color": "252526ff", "attachment": "Block" },
+	{ "name": "Shadow0", "bone": "Shadow0", "color": "00000055", "attachment": "Block" },
+	{ "name": "Shadow1", "bone": "Shadow1", "color": "00000055", "attachment": "Block" },
+	{ "name": "Shadow2", "bone": "Shadow2", "color": "00000055", "attachment": "Block" },
+	{ "name": "Box0", "bone": "Box0", "color": "1e1e1eff", "attachment": "Block" },
+	{ "name": "Box1", "bone": "Box1", "color": "1e1e1eff", "attachment": "Block" },
+	{ "name": "Box2", "bone": "Box2", "color": "1e1e1eff", "attachment": "Block" },
+	{ "name": "Text1", "bone": "Text1", "attachment": "Placeholders/Text" },
+	{ "name": "Text2", "bone": "Text2", "attachment": "Placeholders/Text" },
+	{ "name": "Text3", "bone": "Text3", "attachment": "Placeholders/Text" },
+	{ "name": "Value1", "bone": "Value1", "attachment": "Placeholders/Dummy" },
+	{ "name": "Value2", "bone": "Value2", "attachment": "Placeholders/Dummy" },
+	{ "name": "LineSegment", "bone": "LineSegment", "attachment": "Line" },
+	{ "name": "Value3", "bone": "Slider", "attachment": "Placeholders/Slider" },
+	{ "name": "Text0", "bone": "Text0", "attachment": "Placeholders/Text" },
+	{ "name": "Value0", "bone": "Value0", "attachment": "Placeholders/Dummy" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Background": {
+				"Block": { "width": 32, "height": 32 }
+			},
+			"Box0": {
+				"Block": { "width": 32, "height": 32 }
+			},
+			"Box1": {
+				"Block": { "width": 32, "height": 32 }
+			},
+			"Box2": {
+				"Block": { "width": 32, "height": 32 }
+			},
+			"LineSegment": {
+				"Line": { "width": 340, "height": 4 }
+			},
+			"Shadow": {
+				"Block": { "width": 32, "height": 32 }
+			},
+			"Shadow0": {
+				"Block": { "width": 32, "height": 32 }
+			},
+			"Shadow1": {
+				"Block": { "width": 32, "height": 32 }
+			},
+			"Shadow2": {
+				"Block": { "width": 32, "height": 32 }
+			},
+			"Text0": {
+				"Placeholders/Text": { "width": 240, "height": 70 }
+			},
+			"Text1": {
+				"Placeholders/Text": { "width": 240, "height": 70 }
+			},
+			"Text2": {
+				"Placeholders/Text": { "width": 240, "height": 70 }
+			},
+			"Text3": {
+				"Placeholders/Text": { "width": 240, "height": 70 }
+			},
+			"Value0": {
+				"Placeholders/Dummy": { "width": 100, "height": 100 }
+			},
+			"Value1": {
+				"Placeholders/Dummy": { "width": 100, "height": 100 }
+			},
+			"Value2": {
+				"Placeholders/Dummy": { "width": 100, "height": 100 }
+			},
+			"Value3": {
+				"Placeholders/Slider": { "width": 32, "height": 32 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

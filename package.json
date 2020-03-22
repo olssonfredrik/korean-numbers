@@ -1,0 +1,30 @@
+{
+	"name": "korean-numbers",
+	"version": "0.0.1",
+	"description": "Web-app for practicing the Korean numbers.",
+	"main": "build/rfapp.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/olssonfredrik/korean-numbers.git"
+	},
+	"author": "Fredrik Olsson",
+	"license": "MIT",
+	"private": true,
+	"devDependencies": {
+		"@rocketfuel-toolchain/build": "olssonfredrik/rocketfuel-toolchain-build#v0.0.2",
+		"gulp": "^4.0.0",
+		"typescript": "^3.8.3"
+	},
+	"dependencies": {
+		"@microsoft/applicationinsights-web": "^2.4.4",
+		"@rocketfuel/core": "olssonfredrik/rocketfuel-lib-core#v0.0.5",
+		"@types/gl-matrix": "2.4.4",
+		"@types/howler": "^2.1.2",
+		"esotericsoftware-spine": "olssonfredrik/esotericsoftware-spine#3.8.0",
+		"gl-matrix": "^2.8.1",
+		"howler": "^2.1.3"
+	},
+	"scripts": {
+		"build": "gulp build"
+	}
+}

@@ -1,0 +1,118 @@
+{
+"skeleton": {
+	"hash": "17SvortOwuCCaW16ubGExzKVZB8",
+	"spine": "3.8.85",
+	"x": -160,
+	"y": -64,
+	"width": 324.5,
+	"height": 133,
+	"images": "../Graphics/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Button", "parent": "root" },
+	{ "name": "Box", "parent": "Button" },
+	{ "name": "StateA", "parent": "Box" },
+	{ "name": "StateB", "parent": "Box" },
+	{ "name": "Shadow", "parent": "Button", "x": 4.5, "y": 5, "scaleX": 10, "scaleY": 4 },
+	{ "name": "Scale", "parent": "Box", "scaleX": 10, "scaleY": 4 }
+],
+"slots": [
+	{ "name": "Shadow", "bone": "Shadow", "color": "00000054", "attachment": "Block" },
+	{ "name": "Box", "bone": "Scale", "color": "252525ff", "attachment": "Block" },
+	{ "name": "StateA", "bone": "StateA", "attachment": "Placeholders/Dummy" },
+	{ "name": "StateB", "bone": "StateB", "attachment": "Placeholders/Dummy" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Box": {
+				"Block": { "width": 32, "height": 32 }
+			},
+			"Shadow": {
+				"Block": { "width": 32, "height": 32 }
+			},
+			"StateA": {
+				"Placeholders/Dummy": { "width": 100, "height": 100 }
+			},
+			"StateB": {
+				"Placeholders/Dummy": { "width": 100, "height": 100 }
+			}
+		}
+	}
+],
+"animations": {
+	"StateA": {
+		"slots": {
+			"StateB": {
+				"color": [
+					{ "color": "ffffff00" }
+				]
+			}
+		}
+	},
+	"StateA_StateB": {
+		"slots": {
+			"StateA": {
+				"color": [
+					{ "color": "ffffffff" },
+					{ "time": 0.1667, "color": "ffffff00" }
+				]
+			},
+			"StateB": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"Box": {
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": 4.5, "y": 5 },
+					{ "time": 0.3333 }
+				]
+			}
+		}
+	},
+	"StateB": {
+		"slots": {
+			"StateA": {
+				"color": [
+					{ "color": "ffffff00" }
+				]
+			}
+		}
+	},
+	"StateB_StateA": {
+		"slots": {
+			"StateA": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			},
+			"StateB": {
+				"color": [
+					{ "color": "ffffffff" },
+					{ "time": 0.1667, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"Box": {
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": 4.5, "y": 5 },
+					{ "time": 0.3333 }
+				]
+			}
+		}
+	}
+}
+}

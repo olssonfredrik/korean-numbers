@@ -1,0 +1,7 @@
+.vscode/
+build/
+deploy/
+node_modules/
+temp/
+.temp/
+*.ps1

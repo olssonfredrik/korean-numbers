@@ -1,0 +1,70 @@
+{
+"skeleton": {
+	"hash": "47brQRqpSsB95YJuYcyhIrJ094I",
+	"spine": "3.8.84",
+	"x": -400,
+	"y": -250,
+	"width": 800,
+	"height": 500,
+	"images": "../Graphics/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "Root" },
+	{ "name": "Background", "parent": "Root", "scaleX": 25, "scaleY": 15.625 },
+	{ "name": "Line1", "parent": "Root", "y": 140 },
+	{ "name": "Text1", "parent": "Line1", "x": -162 },
+	{ "name": "Button1", "parent": "Line1", "x": 87 },
+	{ "name": "Line2", "parent": "Root" },
+	{ "name": "Text2", "parent": "Line2", "x": -162 },
+	{ "name": "Toggle", "parent": "Line2", "x": -4 },
+	{ "name": "Line3", "parent": "Root", "y": -140 },
+	{ "name": "Text3", "parent": "Line3", "x": -162 },
+	{ "name": "Slider", "parent": "Line3", "x": 166 },
+	{ "name": "LineSegment", "parent": "Slider" }
+],
+"slots": [
+	{ "name": "Background", "bone": "Background", "color": "252526ff", "attachment": "Block" },
+	{ "name": "Text1", "bone": "Text1", "attachment": "Placeholders/Text" },
+	{ "name": "Text2", "bone": "Text2", "attachment": "Placeholders/Text" },
+	{ "name": "Text3", "bone": "Text3", "attachment": "Placeholders/Text" },
+	{ "name": "Button1", "bone": "Button1", "attachment": "Placeholders/Flag" },
+	{ "name": "Toggle", "bone": "Toggle", "attachment": "Placeholders/Dummy" },
+	{ "name": "LineSegment", "bone": "LineSegment", "attachment": "Line" },
+	{ "name": "Slider", "bone": "Slider", "attachment": "Placeholders/Slider" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Background": {
+				"Block": { "width": 32, "height": 32 }
+			},
+			"Button1": {
+				"Placeholders/Flag": { "width": 180, "height": 120 }
+			},
+			"LineSegment": {
+				"Line": { "width": 340, "height": 4 }
+			},
+			"Slider": {
+				"Placeholders/Slider": { "width": 32, "height": 32 }
+			},
+			"Text1": {
+				"Placeholders/Text": { "width": 240, "height": 70 }
+			},
+			"Text2": {
+				"Placeholders/Text": { "width": 240, "height": 70 }
+			},
+			"Text3": {
+				"Placeholders/Text": { "width": 240, "height": 70 }
+			},
+			"Toggle": {
+				"Placeholders/Dummy": { "width": 100, "height": 100 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

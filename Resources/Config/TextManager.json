@@ -1,0 +1,95 @@
+{
+	"Data": {
+		"Title": {
+			"Text": "K  rean Numbers"
+		},
+
+		"Category": {
+			"Text": "Category:"
+		},
+		"Sino": {
+			"Text": "Sino Numbers"
+		},
+		"Native": {
+			"Text": "Native Numbers"
+		},
+		"Time": {
+			"Text": "Time"
+		},
+		"Date": {
+			"Text": "Date"
+		},
+		"Money": {
+			"Text": "Money"
+		},
+		"Sequence": {
+			"Text": "Sequence"
+		},
+
+		"Type": {
+			"Text": "Type:"
+		},
+		"Listen": {
+			"Text": "Listen"
+		},
+		"Speak": {
+			"Text": "Speak"
+		},
+
+		"Difficulty": {
+			"Text": "Difficulty:"
+		},
+		"Easy": {
+			"Text": "Easy"
+		},
+		"Medium": {
+			"Text": "Medium"
+		},
+		"Hard": {
+			"Text": "Hard"
+		},
+
+		"Delay": {
+			"Text": "Delay:"
+		},
+
+		"Play": {
+			"Text": "Start!"
+		},
+		"Stop": {
+			"Text": "Stop!"
+		},
+
+		"Dot": {
+			"Text": "."
+		},
+		"FontAwesome:ToggleOn": {
+			"Text": "\uf205"
+		},
+		"FontAwesome:ToggleOff": {
+			"Text": "\uf204"
+		},
+		"Empty": {
+			"Text": ""
+		},
+
+		"NumberSinoText": {
+			"Text": "{value,Game:NumberSino}"
+		},
+		"NumberNativeText": {
+			"Text": "{value,Game:NumberNative}"
+		},
+		"TimeText": {
+			"Text": "{value,Game:TimeHours}:{value,Game:TimeMinutes}"
+		},
+		"DateText": {
+			"Text": "{value,Game:DateYear}-{value,Game:DateMonth}-{value,Game:DateDay}"
+		},
+		"MoneyText": {
+			"Text": "{value,Game:Money} W"
+		},
+		"SequenceText": {
+			"Text": "{value,Game:Sequence0} {value,Game:Sequence1} {value,Game:Sequence2} {value,Game:Sequence3}"
+		}
+	}
+}

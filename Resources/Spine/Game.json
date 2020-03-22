@@ -1,0 +1,42 @@
+{
+"skeleton": {
+	"hash": "1I1QKvF4/kTkQEa4e5Xvx+zZbxI",
+	"spine": "3.8.85",
+	"x": -416,
+	"y": -80,
+	"width": 836.23,
+	"height": 163.79,
+	"images": "../Graphics/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "Root" },
+	{ "name": "Text", "parent": "Root" },
+	{ "name": "Background", "parent": "Root", "scaleX": 26, "scaleY": 5 },
+	{ "name": "Shadow", "parent": "Background", "x": 0.16, "y": 0.76 }
+],
+"slots": [
+	{ "name": "Shadow", "bone": "Shadow", "color": "00000055", "attachment": "Block" },
+	{ "name": "Background", "bone": "Background", "attachment": "Block" },
+	{ "name": "Text", "bone": "Text", "attachment": "Placeholders/Text" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Background": {
+				"Block": { "color": "252526ff", "width": 32, "height": 32 }
+			},
+			"Shadow": {
+				"Block": { "width": 32, "height": 32 }
+			},
+			"Text": {
+				"Placeholders/Text": { "width": 240, "height": 70 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

@@ -1,0 +1,415 @@
+{
+	"SceneNode": {
+		"NodeType": "StateSpineNode",
+		"Name": "RootSpine",
+		"Skeleton": "Scene",
+		"Shader": "RFLib/Spine",
+		"StartState": "Settings",
+		"Events": [
+			{
+				"Id": "Game:Play",
+				"State": "Play"
+			},
+			{
+				"Id": "Game:Stop",
+				"State": "Settings"
+			}
+		],
+		"Overrides": {
+			"Title:Placeholders/Text": {
+				"Name": "Title Alignment",
+				"NodeType": "CameraAlignmentNode",
+				"Alignment": {
+					"X": 0.5,
+					"Y": 0.0
+				},
+				"Axis": {
+					"X": 1.0,
+					"Y": 1.0
+				},
+				"Child": {
+					"NodeType": "TransformNode",
+					"Name": "Top",
+					"Position": [0, -150, 0],
+					"Child": {
+						"NodeType": "CompositeNode",
+						"Name": "Title Composite",
+						"Children": [
+							{
+								"NodeType": "TextNode",
+								"Name": "Title",
+								"Font": "Title",
+								"Text": "Title"
+							},
+							{
+								"NodeType": "TransformNode",
+								"Name": "Top",
+								"Position": [-302, -10, 0],
+								"Child": {
+									"NodeType": "CompositeNode",
+									"Name": "Title Composite",
+									"Children": [
+										{
+											"NodeType": "InputNode",
+											"Input": {
+												"Shape": {
+													"Type": "CircleShape",
+													"Radius": 26
+												}
+											},
+											"Events": [
+												{ "EventId": "Page:OpenUrl", "Params": [ "https://github.com/olssonfredrik/korean-numbers" ] }
+											]
+										},
+										{
+											"NodeType": "TexturedQuadNode",
+											"Name": "GitHubLogo",
+											"Shader": "RFLib/TexturedRect",
+											"Textures": [ "GitHub" ],
+											"Width": 52,
+											"Height": 52
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			},
+			"Game:Placeholders/Dummy": {
+				"NodeType": "GameNode",
+				"Name": "GameNode",
+				"Child": {
+					"NodeType": "SpineNode",
+					"Name": "Game",
+					"Skeleton": "Game",
+					"Shader": "RFLib/Spine",
+					"Overrides": {
+						"Text:Placeholders/Text": {
+							"NodeType": "TextNode",
+							"Name": "GameText",
+							"Font": "NumberGame",
+							"Text": "Empty"
+						}
+					}
+				}
+			},
+			"Box:Placeholders/Box": {
+				"NodeType": "SpineNode",
+				"Name": "First Section",
+				"Skeleton": "Section",
+				"Shader": "RFLib/Spine",
+				"Overrides": {
+					"Text0:Placeholders/Text": {
+						"NodeType": "TextNode",
+						"Name": "Category",
+						"Font": "LineText",
+						"Text": "Category"
+					},
+					"Value0:Placeholders/Dummy": {
+						"NodeType": "CompositeNode",
+						"Name": "Category Composite",
+						"Children": [
+							{
+								"NodeType": "TransformNode",
+								"Name": "Value0 Input Offset",
+								"Position": [180, 0, 0],
+								"Child": {
+									"NodeType": "InputNode",
+									"Name": "Category Input",
+									"Input": {
+										"Shape": {
+											"Type": "RectangleShape",
+											"Width": 380,
+											"Height": 60
+										}
+									},
+									"Events": [ { "EventId": "DataManager:StepValue", "Params": ["Category:Index"] } ]
+								}
+							},
+							{
+								"NodeType": "ValueIndexNode",
+								"Name": "Current Category Text",
+								"Value": "Category:Index",
+								"Children": [
+									{
+										"NodeType": "TextNode",
+										"Name": "Sino",
+										"Font": "LineText",
+										"Text": "Sino"
+									},
+									{
+										"NodeType": "TextNode",
+										"Name": "Native",
+										"Font": "LineText",
+										"Text": "Native"
+									},
+									{
+										"NodeType": "TextNode",
+										"Name": "Time",
+										"Font": "LineText",
+										"Text": "Time"
+									},
+									{
+										"NodeType": "TextNode",
+										"Name": "Date",
+										"Font": "LineText",
+										"Text": "Date"
+									},
+									{
+										"NodeType": "TextNode",
+										"Name": "Money",
+										"Font": "LineText",
+										"Text": "Money"
+									},
+									{
+										"NodeType": "TextNode",
+										"Name": "Sequence",
+										"Font": "LineText",
+										"Text": "Sequence"
+									}
+								]
+							}
+						]
+					},
+					"Text2:Placeholders/Text": {
+						"NodeType": "TextNode",
+						"Name": "Type",
+						"Font": "LineText",
+						"Text": "Type"
+					},
+					"Value2:Placeholders/Dummy": {
+						"NodeType": "CompositeNode",
+						"Name": "Type Composite",
+						"Children": [
+							{
+								"NodeType": "TransformNode",
+								"Name": "Value1 Input Offset",
+								"Position": [180, 0, 0],
+								"Child": {
+									"NodeType": "InputNode",
+									"Name": "Type Input",
+									"Input": {
+										"Shape": {
+											"Type": "RectangleShape",
+											"Width": 380,
+											"Height": 60
+										}
+									},
+									"Events": [ { "EventId": "DataManager:StepValue", "Params": ["Type:Index"] } ]
+								}
+							},
+							{
+								"NodeType": "ValueIndexNode",
+								"Name": "Current Type Text",
+								"Value": "Type:Index",
+								"Children": [
+									{
+										"NodeType": "TextNode",
+										"Name": "Listen",
+										"Font": "LineText",
+										"Text": "Listen"
+									},
+									{
+										"NodeType": "TextNode",
+										"Name": "Speak",
+										"Font": "LineText",
+										"Text": "Speak"
+									}
+								]
+							}
+						]
+					},
+					"Text1:Placeholders/Text": {
+						"NodeType": "TextNode",
+						"Name": "Difficulty",
+						"Font": "LineText",
+						"Text": "Difficulty"
+					},
+					"Value1:Placeholders/Dummy": {
+						"NodeType": "CompositeNode",
+						"Name": "Difficulty Composite",
+						"Children": [
+							{
+								"NodeType": "TransformNode",
+								"Name": "Value2 Input Offset",
+								"Position": [180, 0, 0],
+								"Child": {
+									"NodeType": "InputNode",
+									"Name": "Difficulty Input",
+									"Input": {
+										"Shape": {
+											"Type": "RectangleShape",
+											"Width": 380,
+											"Height": 60
+										}
+									},
+									"Events": [ { "EventId": "DataManager:StepValue", "Params": ["Difficulty:Index"] } ]
+								}
+							},
+							{
+								"NodeType": "ValueIndexNode",
+								"Name": "Current Difficulty Text",
+								"Value": "Difficulty:Index",
+								"Children": [
+									{
+										"NodeType": "TextNode",
+										"Name": "Easy",
+										"Font": "LineText",
+										"Text": "Easy"
+									},
+									{
+										"NodeType": "TextNode",
+										"Name": "Medium",
+										"Font": "LineText",
+										"Text": "Medium"
+									},
+									{
+										"NodeType": "TextNode",
+										"Name": "Hard",
+										"Font": "LineText",
+										"Text": "Hard"
+									}
+								]
+							}
+						]
+					},
+					"Text3:Placeholders/Text": {
+						"NodeType": "TextNode",
+						"Name": "Delay",
+						"Font": "LineText",
+						"Text": "Delay"
+					},
+					"Value3:Placeholders/Slider": {
+						"NodeType": "CompositeNode",
+						"Name": "Delay Slider1 Composite",
+						"Children": [
+							{
+								"NodeType": "InputSliderNode",
+								"Name": "Delay Slider",
+								"Value": "Delay:Value",
+								"ActiveRange": 0.85,
+								"Input": {
+									"Shape": {
+										"Type": "RectangleShape",
+										"Width": 380,
+										"Height": 80
+									}
+								}
+							},
+							{
+								"NodeType": "TransformValueNode",
+								"Name": "Delay Slider Icon",
+								"Value": "Delay:Value",
+								"Scale": 340,
+								"Child": {
+									"NodeType": "TransformNode",
+									"Name": "Dot Offset",
+									"Position": [10, 0, 0],
+									"Child": {
+										"NodeType": "TextNode",
+										"Name": "Dot",
+										"Font": "UIDot",
+										"Text": "Dot"
+									}
+								}
+							}
+						]
+					}
+				}
+			},
+			"Button:Placeholders/Dummy": {
+				"Name": "Button Alignment",
+				"NodeType": "CameraAlignmentNode",
+				"Alignment": {
+					"X": 0.5,
+					"Y": 1.0
+				},
+				"Axis": {
+					"X": 1.0,
+					"Y": 1.0
+				},
+				"Child": {
+					"NodeType": "TransformNode",
+					"Name": "Bottom",
+					"Position": [0, 150, 0],
+					"Child": {
+						"NodeType": "StateSpineNode",
+						"Name": "ButtonSpine",
+						"Skeleton": "Button",
+						"Shader": "RFLib/Spine",
+						"StartState": "StateA",
+						"Events": [
+							{
+								"Id": "PlayButton:StateA",
+								"State": "StateA"
+							},
+							{
+								"Id": "PlayButton:StateB",
+								"State": "StateB"
+							}
+						],
+						"Overrides": {
+							"StateA:Placeholders/Dummy": {
+								"NodeType": "CompositeNode",
+								"Name": "Play Button",
+								"Children": [
+									{
+										"NodeType": "InputNode",
+										"Name": "Play Button Input",
+										"Input": {
+											"Shape": {
+												"Type": "RectangleShape",
+												"Width": 200,
+												"Height": 100
+											}
+										},
+										"Events": [
+											{ "EventId": "Game:Play" },
+											{ "EventId": "PlayButton:StateB" },
+											{ "EventId": "DataManager:SetValue", "Params": ["Volume:Voice", 1] }
+										]
+									},
+									{
+										"NodeType": "TextNode",
+										"Name": "Play Text",
+										"Font": "Title",
+										"Text": "Play"
+									}
+								]
+							},
+							"StateB:Placeholders/Dummy": {
+								"NodeType": "CompositeNode",
+								"Name": "Stop Button",
+								"Children": [
+									{
+										"NodeType": "InputNode",
+										"Name": "Stop Button Input",
+										"Input": {
+											"Shape": {
+												"Type": "RectangleShape",
+												"Width": 300,
+												"Height": 100
+											}
+										},
+										"Events": [
+											{ "EventId": "Game:Stop" },
+											{ "EventId": "PlayButton:StateA" },
+											{ "EventId": "DataManager:SetValue", "Params": ["Volume:Voice", 0] }
+										]
+									},
+									{
+										"NodeType": "TextNode",
+										"Name": "Stop Text",
+										"Font": "Title",
+										"Text": "Stop"
+									}
+								]
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
